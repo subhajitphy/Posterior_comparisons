@@ -1,4 +1,4 @@
-The results are available in this [spreadsheet](https://docs.google.com/spreadsheets/d/1rm71fIEdJZjepKPwkmmcxWZZyYjlXoxdKIDfKyglSRU/edit?usp=sharing). 
+The results are also available in this [spreadsheet](https://docs.google.com/spreadsheets/d/1rm71fIEdJZjepKPwkmmcxWZZyYjlXoxdKIDfKyglSRU/edit?usp=sharing). 
 | SPNA (EPTA vs EPTA+INPTA)  |        | Tension in $\sigma$ |        |             |  | EPTA-ONLY PSRS (SPNA vs SPNTA) |        | Tension in $\sigma$ |         |             |  | EPTA+INPTA PSRS (SPNA vs SPNTA) |        | Tension in $\sigma$ |         |             |
 |----------------------------|--------|--------------------|--------|-------------|--|--------------------------------|--------|--------------------|---------|-------------|--|---------------------------------|--------|--------------------|---------|-------------|
 | Pulsar                     | Model  | RN-RN              | DM-DM  | RN+DM-RN+DM |  | Pulsar                         | Model  | RN-RN              | DM-DM   | RN+DM-RN+DM |  | Pulsar                          | Model  | RN-RN              | DM-DM   | RN+DM-RN+DM |
