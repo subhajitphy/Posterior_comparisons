@@ -26,9 +26,12 @@ def Diff_chain_shift(A1,A2,off_size=None,MLinfo=None,
     if len(A1.getMeans())<=2 and method==None:
         
         shift_probability, shift_lower, shift_upper = mcmc_tension.kde_parameter_shift_2D_fft(diff_chain, feedback=0)
+        nsig=utilities.from_confidence_to_sigma(shift_probability)
+        sigl=utilities.from_confidence_to_sigma(shift_lower)
+        sigh=utilities.from_confidence_to_sigma(shift_upper)
         #nsig=utilities.from_confidence_to_sigma(shift_probability)
         if (shift_probability!=1):
-            return diff_chain, utilities.from_confidence_to_sigma(shift_probability), shift_lower, shift_upper
+            return diff_chain, nsig, sigl, sigh
         else:
             sig_n, chi_2, D_B, chi2_probability=tension_chi2_approach(A1,A2)
             warnings.warn('Tension is higher than 4 sigma!! chi squared estimators will be used to compute the tension.')
@@ -52,8 +55,12 @@ def Diff_chain_shift(A1,A2,off_size=None,MLinfo=None,
 
         exact_shift_P_1, exact_shift_low_1, exact_shift_hi_1 = diff_flow_callback.estimate_shift()
         nsig=utilities.from_confidence_to_sigma(exact_shift_P_1)
+        sigl=utilities.from_confidence_to_sigma(exact_shift_low_1)
+        sigh=utilities.from_confidence_to_sigma(exact_shift_hi_1)
+        
+        
         if (exact_shift_P_1!=1):
-            return diff_chain, nsig, exact_shift_low_1, exact_shift_hi_1
+            return diff_chain, nsig, sigl, sigh
         
 
         else:
