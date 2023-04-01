@@ -1,4 +1,4 @@
-The results are also available in this [spreadsheet](https://docs.google.com/spreadsheets/d/1rm71fIEdJZjepKPwkmmcxWZZyYjlXoxdKIDfKyglSRU/edit?usp=sharing). 
+The WM2 comparison results are also available in this [spreadsheet](https://docs.google.com/spreadsheets/d/1rm71fIEdJZjepKPwkmmcxWZZyYjlXoxdKIDfKyglSRU/edit?usp=sharing). 
 
 | Pulsar                    | Model  | RN-RN        | DM-DM  | RN+DM-RN+DM |  | Pulsar                     | Model  | RN-RN        | DM-DM  | RN+DM-RN+DM |
 |---------------------------|--------|--------------|--------|-------------|--|----------------------------|--------|--------------|--------|-------------|
