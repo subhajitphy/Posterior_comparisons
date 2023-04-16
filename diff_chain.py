@@ -9,19 +9,12 @@ mcmc_tension.n_threads = 1
 import warnings
 from tensorflow.keras.callbacks import ReduceLROnPlateau
 
-def Diff_chain_shift(A1,A2,off_size=None,MLinfo=None,
-                     boost=None,method=None):
+def Diff_chain_shift(A1,A2,MLinfo=None,method=None):
     
     input_arr=[A1,A2]
 
-    if(off_size is None):
-        off_size=5
-    if(boost is None):
-        boost=4
-        
-    for i,chain in enumerate(input_arr):
-        chain.chain_offsets =np.linspace(0,len(input_arr[i].samples[:,0]),off_size,dtype = int)
-    diff_chain = mcmc_tension.parameter_diff_chain( A1, A2, boost=boost)
+    
+    diff_chain = mcmc_tension.parameter_diff_chain( A1, A2)
     
     if len(A1.getMeans())<=2 and method==None:
         
