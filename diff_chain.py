@@ -27,7 +27,7 @@ def Diff_chain_shift(A1,A2,MLinfo=None,method=None):
             return diff_chain, nsig, sigl, sigh
         else:
             sig_n, chi_2, D_B, chi2_probability=tension_chi2_approach(A1,A2)
-            warnings.warn('Tension is higher than 4 sigma!! chi squared estimators will be used to compute the tension.')
+            warnings.warn('Tension is higher!! chi squared estimators will be used to compute the tension.')
             return diff_chain, sig_n, chi_2, D_B
         
 
